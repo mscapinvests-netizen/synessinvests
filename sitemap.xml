@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://synessinvest.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synessinvest.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synessinvest.com/?lang=fr"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://synessinvest.com/#/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synessinvest.com/#/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synessinvest.com/#/about?lang=fr"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://synessinvest.com/#/platforms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synessinvest.com/#/platforms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synessinvest.com/#/platforms?lang=fr"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://synessinvest.com/#/education</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synessinvest.com/#/education"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synessinvest.com/#/education?lang=fr"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://synessinvest.com/#/advisory</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synessinvest.com/#/advisory"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synessinvest.com/#/advisory?lang=fr"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://synessinvest.com/#/network</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synessinvest.com/#/network"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synessinvest.com/#/network?lang=fr"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://synessinvest.com/#/investors</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synessinvest.com/#/investors"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synessinvest.com/#/investors?lang=fr"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://synessinvest.com/#/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synessinvest.com/#/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synessinvest.com/#/contact?lang=fr"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://synessinvest.com/#/insights</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synessinvest.com/#/insights"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synessinvest.com/#/insights?lang=fr"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://synessinvest.com/#/leadership</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synessinvest.com/#/leadership"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synessinvest.com/#/leadership?lang=fr"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://synessinvest.com/#/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://synessinvest.com/#/terms</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://synessinvest.com/#/cookies</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
