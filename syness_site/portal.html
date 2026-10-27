@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student &amp; Family Portal — Syness Education Partner</title>
+<meta name="description" content="The Syness Student & Family Portal — confidential multilingual intake, pathway tracking, documents, applications, offers, visa checklist and family dashboard.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;600&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="topbar"><div class="container topbar-in">
+  <div>Syness Education Partner · Student &amp; Family Portal</div>
+  <div class="topbar-links">
+    <a href="university-pathways.html">University Pathways</a>
+    <a href="index.html">Syness Invest</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div></div>
+
+<header class="site"><div class="container mainbar">
+  <a class="brand" href="index.html">SYNESS <span>EDUCATION</span><small>Student &amp; Family Portal</small></a>
+  <nav class="menu">
+    <a href="index.html">Syness Invest</a>
+    <a href="university-pathways.html">University Pathways</a>
+    <a href="portal.html" class="active">Student Portal</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a class="btn btn-gold" href="#new">Start Your Profile</a>
+</div></header>
+
+<section class="hero compact">
+  <div class="container hero-in">
+    <div class="kicker">Private Client Area · Confidential</div>
+    <h1>The Portal Designed Around the Family</h1>
+    <p class="sub">Multilingual onboarding, secure document exchange, pathway reports, applications, offers, visa checklist, appointments and family communication — one discreet environment.</p>
+    <p class="sub arabic" style="font-size:15px">بوابة مصممة حول العائلة: تسجيل متعدد اللغات، رفع آمن للوثائق، ملف الطالب، تقرير المسار، متابعة المهام والمواعيد، العروض، مراحل الدفع، لوحة العائلة.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="#new">Start Your Profile</a>
+      <a class="btn btn-ghost" href="#dashboard">Preview the Family Dashboard</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTAKE FORM ============ -->
+<section class="band" id="new">
+  <div class="container">
+    <div class="eyebrow">Step 1 of the Journey — Student &amp; Family Profile</div>
+    <h2 class="h2">Complete your confidential Student &amp; Family Profile.</h2>
+    <p class="lede">Multilingual intake · English / Français. Everything you share is treated as confidential and used only to design the student's pathway strategy.</p>
+    <div class="note"><b>When should you start?</b> Ideally, university planning begins during <b>Première / Year 12 (or the equivalent)</b>, allowing time to strengthen grades, choose subjects strategically, prepare language tests, build extracurricular evidence, research destinations and prepare applications. However, Syness can assess students at <b>any stage</b> — early planning, late applications, transfers, mature-student entry, postgraduate study or urgent pathway review. Earlier preparation creates more options.</div>
+
+    <form id="intakeForm" novalidate>
+      <div class="steps-progress">
+        <span class="step-count" id="stepLabel">Section 1 / 15</span>
+        <div class="bar"><div class="fill" id="barFill"></div></div>
+      </div>
+
+      <!-- 1 STUDENT -->
+      <fieldset class="fstep active">
+        <legend>1 · Student Identity</legend>
+        <div class="fsub">Identité de l'étudiant</div>
+        <div class="grid g2">
+          <div class="field"><label>Full legal name <span class="fr">/ Nom légal complet</span></label><input type="text" name="legal_name"></div>
+          <div class="field"><label>Preferred name <span class="fr">/ Prénom d'usage</span></label><input type="text" name="preferred_name"></div>
+          <div class="field"><label>Date of birth <span class="fr">/ Date de naissance</span></label><input type="date" name="dob"></div>
+          <div class="field"><label>Nationality / nationalities <span class="fr">/ Nationalité(s)</span></label><input type="text" name="nationality"></div>
+          <div class="field"><label>Country of birth <span class="fr">/ Pays de naissance</span></label><input type="text" name="birth_country"></div>
+          <div class="field"><label>Current country &amp; city of residence <span class="fr">/ Résidence actuelle</span></label><input type="text" name="residence"></div>
+          <div class="field"><label>Residence / immigration status <span class="fr">/ Statut de résidence</span></label><input type="text" name="residence_status"></div>
+          <div class="field"><label>Student email &amp; phone/WhatsApp</label><input type="text" name="student_contact"></div>
+          <div class="field"><label>Languages spoken &amp; level <span class="fr">/ Langues parlées et niveau</span></label><input type="text" name="languages"></div>
+        </div>
+        <div class="note tq"><b>Family &amp; decision-making</b> — Famille &amp; prise de décision</div>
+        <div class="grid g2">
+          <div class="field"><label>Parent/Guardian 1 — name, relationship, occupation, country, email, phone</label><textarea name="guardian1"></textarea></div>
+          <div class="field"><label>Parent/Guardian 2 — name, relationship, occupation, country, email, phone</label><textarea name="guardian2"></textarea></div>
+          <div class="field"><label>Principal decision-maker for applications <span class="fr">/ Décisionnaire principal</span></label><input type="text" name="decision_maker"></div>
+          <div class="field"><label>Responsible for university payments <span class="fr">/ Responsable des paiements</span></label><input type="text" name="payment_owner"></div>
+          <div class="field"><label>Urgent decision/payment contact <span class="fr">/ Contact urgent</span></label><input type="text" name="urgent_contact"></div>
+        </div>
+      </fieldset>
+
+      <!-- 2 EDUCATION -->
+      <fieldset class="fstep">
+        <legend>2 · Education History</legend>
+        <div class="fsub">Parcours scolaire et universitaire</div>
+        <div class="field"><label>Current institution, country, year/level, expected completion <span class="fr">/ Établissement actuel et fin d'études prévue</span></label><textarea name="current_institution"></textarea></div>
+        <div class="field"><label>Current curriculum <span class="fr">/ Programme actuel</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="curr" value="French Baccalauréat"> French Baccalauréat</label>
+            <label><input type="checkbox" name="curr" value="IB"> International Baccalaureate (IB)</label>
+            <label><input type="checkbox" name="curr" value="A Levels"> A Levels</label>
+            <label><input type="checkbox" name="curr" value="IGCSE/GCSE"> IGCSE/GCSE</label>
+            <label><input type="checkbox" name="curr" value="American High School Diploma / AP"> American High School Diploma / AP</label>
+            <label><input type="checkbox" name="curr" value="Foundation/Pathway"> Foundation / Pathway</label>
+            <label><input type="checkbox" name="curr" value="Undergraduate degree"> Undergraduate degree</label>
+            <label><input type="checkbox" name="curr" value="Master's degree"> Master's degree</label>
+            <label><input type="checkbox" name="curr" value="Other"> Other</label>
+          </div>
+        </div>
+        <div class="field"><label>List ALL previous institutions, dates, qualifications, results, completed? <span class="fr">/ Tous les établissements précédents</span></label><textarea name="previous_institutions"></textarea></div>
+        <div class="field"><label>Any of these apply? <span class="fr">/ Situation particulière</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="situation" value="Repeated a year"> Repeated a year / Redoublement</label>
+            <label><input type="checkbox" name="situation" value="Changed curriculum"> Changed curriculum/institution</label>
+            <label><input type="checkbox" name="situation" value="Gap"> Interrupted studies / gap</label>
+            <label><input type="checkbox" name="situation" value="Private candidate"> Private/independent candidate</label>
+            <label><input type="checkbox" name="situation" value="Not completed"> Started but not completed a programme</label>
+            <label><input type="checkbox" name="situation" value="None"> None / Aucun</label>
+          </div>
+        </div>
+        <div class="field"><label>Explain any educational gap longer than three months <span class="fr">/ Interruption &gt; 3 mois</span></label><textarea name="gaps"></textarea></div>
+      </fieldset>
+
+      <!-- 3 ACADEMIC -->
+      <fieldset class="fstep">
+        <legend>3 · Academic Profile &amp; Documents</legend>
+        <div class="fsub">Profil académique &amp; documents</div>
+        <div class="grid g2">
+          <div class="field"><label>Most recent average / GPA / predicted grade <span class="fr">/ Moyenne / note prédite</span></label><input type="text" name="gpa"></div>
+          <div class="field"><label>Final examination results, if applicable <span class="fr">/ Résultats d'examens finaux</span></label><input type="text" name="final_exams"></div>
+        </div>
+        <div class="field"><label>Strongest subjects and why <span class="fr">/ Matières les plus fortes</span></label><textarea name="strong_subjects"></textarea></div>
+        <div class="field"><label>Weakest subjects / areas to strengthen <span class="fr">/ Axes d'amélioration</span></label><textarea name="weak_subjects"></textarea></div>
+        <div class="field"><label>Awards, distinctions, competitions, honours <span class="fr">/ Distinctions</span></label><textarea name="awards"></textarea></div>
+        <div class="field"><label>Documents available now <span class="fr">/ Documents disponibles</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="docs" value="School reports"> School reports / Bulletins</label>
+            <label><input type="checkbox" name="docs" value="Official transcripts"> Official transcripts / Relevés officiels</label>
+            <label><input type="checkbox" name="docs" value="Predicted grades"> Predicted grades / Notes prévisionnelles</label>
+            <label><input type="checkbox" name="docs" value="Final diploma"> Final diploma/certificate</label>
+            <label><input type="checkbox" name="docs" value="Academic references"> Academic references</label>
+            <label><input type="checkbox" name="docs" value="CV"> CV</label>
+            <label><input type="checkbox" name="docs" value="Personal Statement"> Personal Statement</label>
+            <label><input type="checkbox" name="docs" value="Portfolio"> Portfolio</label>
+          </div>
+        </div>
+        <div class="field"><label>Which documents are missing? <span class="fr">/ Documents manquants</span></label><textarea name="missing_docs"></textarea></div>
+      </fieldset>
+
+      <!-- 4 ENGLISH -->
+      <fieldset class="fstep">
+        <legend>4 · English &amp; Language Readiness</legend>
+        <div class="fsub">Anglais &amp; préparation linguistique</div>
+        <div class="field"><label>Tests taken or planned <span class="fr">/ Tests passés ou prévus</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="test" value="IELTS"> IELTS</label>
+            <label><input type="checkbox" name="test" value="TOEFL"> TOEFL</label>
+            <label><input type="checkbox" name="test" value="Duolingo"> Duolingo English Test</label>
+            <label><input type="checkbox" name="test" value="Cambridge"> Cambridge English</label>
+            <label><input type="checkbox" name="test" value="PTE"> PTE</label>
+            <label><input type="checkbox" name="test" value="None yet"> None yet / Aucun</label>
+          </div>
+        </div>
+        <div class="field"><label>Test date, overall and component scores <span class="fr">/ Date, score global et par compétence</span></label><textarea name="test_scores"></textarea></div>
+        <div class="field"><label>If below requirement, ready to retake quickly? How quickly could you sit another test? <span class="fr">/ Repasser un test rapidement ?</span></label><input type="text" name="retake"></div>
+      </fieldset>
+
+      <!-- 5 STUDY GOALS -->
+      <fieldset class="fstep">
+        <legend>5 · Study Choice &amp; Long-Term Vision</legend>
+        <div class="fsub">Choix d'études &amp; vision à long terme</div>
+        <div class="grid g3">
+          <div class="field"><label>First-choice subject/degree <span class="fr">/ Premier choix</span></label><input type="text" name="choice1"></div>
+          <div class="field"><label>Second choice <span class="fr">/ Deuxième choix</span></label><input type="text" name="choice2"></div>
+          <div class="field"><label>Third choice <span class="fr">/ Troisième choix</span></label><input type="text" name="choice3"></div>
+        </div>
+        <div class="field"><label>Why this subject? What experiences influenced it? What have you done to explore it? <span class="fr">/ Pourquoi cette discipline ?</span></label><textarea name="motivation"></textarea></div>
+        <div class="field"><label>Would you consider another degree if Syness identifies a better-aligned route? Why? <span class="fr">/ Autre diplôme envisageable ?</span></label><textarea name="flexible_degree"></textarea></div>
+        <div class="grid g2">
+          <div class="field"><label>Professionally in 5 years <span class="fr">/ Dans 5 ans</span></label><textarea name="vision5"></textarea></div>
+          <div class="field"><label>And in 10 years <span class="fr">/ Dans 10 ans</span></label><textarea name="vision10"></textarea></div>
+        </div>
+        <div class="field"><label>Careers, sectors, organisations of interest <span class="fr">/ Métiers et secteurs qui vous intéressent</span></label><textarea name="careers"></textarea></div>
+        <div class="field"><label>Master's / MBA / PhD / professional qualification later? <span class="fr">/ Études ultérieures envisagées</span></label><input type="text" name="future_study"></div>
+        <div class="field"><label>What ultimate impact do you want your education to enable? <span class="fr">/ Impact ultime souhaité</span></label><textarea name="ultimate_impact"></textarea></div>
+      </fieldset>
+
+      <!-- 6 DESTINATIONS -->
+      <fieldset class="fstep">
+        <legend>6 · Destinations &amp; University Preferences</legend>
+        <div class="fsub">Destinations &amp; préférences universitaires</div>
+        <div class="field"><label>Preferred destinations <span class="fr">/ Destinations préférées</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="dest" value="UK"> United Kingdom</label>
+            <label><input type="checkbox" name="dest" value="US"> United States</label>
+            <label><input type="checkbox" name="dest" value="Canada"> Canada</label>
+            <label><input type="checkbox" name="dest" value="France"> France</label>
+            <label><input type="checkbox" name="dest" value="Switzerland"> Switzerland</label>
+            <label><input type="checkbox" name="dest" value="Europe"> Europe</label>
+            <label><input type="checkbox" name="dest" value="UAE"> UAE</label>
+            <label><input type="checkbox" name="dest" value="Other"> Other</label>
+          </div>
+        </div>
+        <div class="field"><label>Preferred cities / locations <span class="fr">/ Villes préférées</span></label><input type="text" name="cities"></div>
+        <div class="field"><label>What matters most? <span class="fr">/ Priorités</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="priority" value="Russell Group"> Russell Group</label>
+            <label><input type="checkbox" name="priority" value="Ivy League"> Ivy League</label>
+            <label><input type="checkbox" name="priority" value="Highly ranked"> Highly ranked international university</label>
+            <label><input type="checkbox" name="priority" value="Specialist"> Specialist institution</label>
+            <label><input type="checkbox" name="priority" value="Career outcomes"> Strong career outcomes regardless of ranking</label>
+            <label><input type="checkbox" name="priority" value="Academic fit"> Best academic fit</label>
+            <label><input type="checkbox" name="priority" value="Value"> Best value</label>
+            <label><input type="checkbox" name="priority" value="Advise me"> I need Syness to advise me</label>
+          </div>
+        </div>
+        <div class="field"><label>Name up to five dream universities <span class="fr">/ Jusqu'à cinq universités de rêve</span></label><textarea name="dream_unis"></textarea></div>
+        <div class="grid g2">
+          <div class="field"><label>Not willing to compromise on <span class="fr">/ Non négociable</span></label><textarea name="non_negotiable"></textarea></div>
+          <div class="field"><label>Willing to be flexible about <span class="fr">/ Flexible sur</span></label><textarea name="flexible"></textarea></div>
+        </div>
+      </fieldset>
+
+      <!-- 7 ENTRY & TIMING -->
+      <fieldset class="fstep">
+        <legend>7 · Entry Level, Intake &amp; Timing</legend>
+        <div class="fsub">Niveau d'entrée, rentrée &amp; calendrier</div>
+        <div class="field"><label>Target entry level <span class="fr">/ Niveau visé</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="level" value="Foundation/Pathway"> Foundation / Pathway</label>
+            <label><input type="checkbox" name="level" value="Bachelor"> Bachelor / Undergraduate</label>
+            <label><input type="checkbox" name="level" value="Master"> Master's</label>
+            <label><input type="checkbox" name="level" value="MBA"> MBA</label>
+            <label><input type="checkbox" name="level" value="PhD"> PhD / Doctorate</label>
+            <label><input type="checkbox" name="level" value="Transfer"> Transfer</label>
+            <label><input type="checkbox" name="level" value="Mature"> Mature Student entry</label>
+            <label><input type="checkbox" name="level" value="Unsure"> Unsure</label>
+          </div>
+        </div>
+        <div class="grid g2">
+          <div class="field"><label>Preferred intake (month/year) <span class="fr">/ Rentrée souhaitée</span></label><input type="text" name="intake" placeholder="e.g. September 2027"></div>
+          <div class="field"><label>How important is starting this year? <span class="fr">/ Importance de commencer cette année</span></label>
+            <select name="timing_importance">
+              <option>Essential</option><option>Highly preferable</option><option>Flexible</option><option>Willing to wait for a stronger option</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label>Open to preparation routes? <span class="fr">/ Passerelles envisageables</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="route" value="Foundation Year"> Foundation Year</label>
+            <label><input type="checkbox" name="route" value="International Year One"> International Year One</label>
+            <label><input type="checkbox" name="route" value="Pre-Master's"> Pre-Master's</label>
+            <label><input type="checkbox" name="route" value="English preparation"> English preparation</label>
+            <label><input type="checkbox" name="route" value="Community College + transfer"> Community College + transfer (US)</label>
+            <label><input type="checkbox" name="route" value="Structured gap year"> Structured gap year</label>
+            <label><input type="checkbox" name="route" value="Direct entry only"> Direct entry only</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- 8 UCAS -->
+      <fieldset class="fstep">
+        <legend>8 · UK / UCAS Profile</legend>
+        <div class="fsub">Profil Royaume-Uni / UCAS</div>
+        <div class="grid g2">
+          <div class="field"><label>Existing UCAS account / UCAS ID <span class="fr">/ Compte UCAS existant</span></label><input type="text" name="ucas_id"></div>
+          <div class="field"><label>Previous UCAS application — which entry year? <span class="fr">/ Candidature UCAS antérieure</span></label><input type="text" name="ucas_prev"></div>
+        </div>
+        <div class="field"><label>Applying through a school/college, independently, or another adviser? <span class="fr">/ Via établissement, indépendant ou autre conseiller</span></label><input type="text" name="ucas_channel"></div>
+        <div class="field"><label>UCAS choices already used? <span class="fr">/ Choix UCAS déjà utilisés</span></label><input type="text" name="ucas_choices"></div>
+        <div class="field"><label>UCAS offers, rejections or withdrawn decisions received? <span class="fr">/ Offres, refus ou retraits UCAS</span></label><textarea name="ucas_outcomes"></textarea></div>
+        <div class="field"><label>Academic reference and predicted grades already in place? <span class="fr">/ Référence et notes prévisionnelles</span></label><input type="text" name="ucas_reference"></div>
+        <div class="note tq">2027 entry: UCAS opened 12 May 2026 · submissions from 1 September 2026 · 15 October 2026 for Oxford/Cambridge and most medicine, dentistry &amp; veterinary courses · 13 January 2027 equal consideration for most other courses. Syness determines whether UCAS, direct application, Clearing or another route is appropriate — never wait for the deadline to begin. <a href="university-pathways.html#ucas" style="color:#0A1E3C">Full dates →</a></div>
+      </fieldset>
+
+      <!-- 9 PREVIOUS APPLICATIONS -->
+      <fieldset class="fstep">
+        <legend>9 · Previous Applications &amp; Offers</legend>
+        <div class="fsub">Candidatures et offres précédentes</div>
+        <div class="field"><label>All previous applications — institution, course, year, outcome <span class="fr">/ Toutes candidatures antérieures</span></label><textarea name="prev_apps"></textarea></div>
+        <div class="field"><label>Conditional/unconditional offer, CAS, scholarship or student visa ever received? <span class="fr">/ Offres, CAS, bourse ou visa déjà reçus</span></label><textarea name="prev_offers"></textarea></div>
+        <div class="field"><label>Accepted an offer but not enrolled? Explain <span class="fr">/ Offre acceptée sans inscription</span></label><textarea name="accepted_not_enrolled"></textarea></div>
+        <div class="field"><label>Ever lost an offer because a condition, document, test or payment was missed? <span class="fr">/ Offre perdue pour condition manquée</span></label><textarea name="lost_offer"></textarea></div>
+      </fieldset>
+
+      <!-- 10 VISA -->
+      <fieldset class="fstep">
+        <legend>10 · Confidential Immigration &amp; Visa History</legend>
+        <div class="fsub">Historique confidentiel d'immigration &amp; visa</div>
+        <div class="field"><label>Any of these apply <span class="fr">/ Éléments applicables</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="visa" value="Student visa held"> Student visa previously held</label>
+            <label><input type="checkbox" name="visa" value="Refusal"> Visa refusal</label>
+            <label><input type="checkbox" name="visa" value="Cancelled/curtailed"> Visa cancelled/curtailed</label>
+            <label><input type="checkbox" name="visa" value="Sponsorship withdrawn"> University sponsorship withdrawn</label>
+            <label><input type="checkbox" name="visa" value="Course left"> Course left before completion</label>
+            <label><input type="checkbox" name="visa" value="Immigration correspondence"> Immigration correspondence received</label>
+            <label><input type="checkbox" name="visa" value="None"> None / Aucun</label>
+          </div>
+        </div>
+        <div class="field"><label>Dates, countries and full details for anything selected <span class="fr">/ Dates, pays et détails</span></label><textarea name="visa_details"></textarea></div>
+        <div class="field"><label>Pending immigration application? <span class="fr">/ Demande en cours</span></label><input type="text" name="visa_pending"></div>
+      </fieldset>
+
+      <!-- 11 FINANCE -->
+      <fieldset class="fstep">
+        <legend>11 · Financial Profile</legend>
+        <div class="fsub">Profil financier</div>
+        <div class="field"><label>Annual tuition budget <span class="fr">/ Budget annuel frais de scolarité</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="budget" value="<15k"> Under £15,000/year</label>
+            <label><input type="checkbox" name="budget" value="15-25k"> £15,000–£25,000/year</label>
+            <label><input type="checkbox" name="budget" value="25-40k"> £25,000–£40,000/year</label>
+            <label><input type="checkbox" name="budget" value="40-60k"> £40,000–£60,000/year</label>
+            <label><input type="checkbox" name="budget" value="60k+"> £60,000+/year</label>
+            <label><input type="checkbox" name="budget" value="Flexible"> Flexible for the right institution</label>
+          </div>
+        </div>
+        <div class="field"><label>Annual living / accommodation budget <span class="fr">/ Budget logement/vie</span></label><input type="text" name="living_budget"></div>
+        <div class="field"><label>Funding source(s) <span class="fr">/ Sources de financement</span></label><input type="text" name="funding"></div>
+        <div class="field"><label>Are tuition and visa-evidence funds currently available? <span class="fr">/ Fonds disponibles</span></label><input type="text" name="funds_available"></div>
+        <div class="field"><label>How quickly can the family authorise an urgent deposit? <span class="fr">/ Délai de versement d'un dépôt urgent</span></label>
+          <select name="deposit_speed"><option>Same day</option><option>24–48h</option><option>One week</option><option>Longer</option></select>
+        </div>
+        <div class="field"><label>Who has authority to approve payment? <span class="fr">/ Autorité de paiement</span></label><input type="text" name="payment_authority"></div>
+      </fieldset>
+
+      <!-- 12 SCHOLARSHIPS -->
+      <fieldset class="fstep">
+        <legend>12 · Scholarships &amp; Financial Aid</legend>
+        <div class="fsub">Bourses &amp; aides financières</div>
+        <div class="field"><label>Type of support sought <span class="fr">/ Type d'aide recherchée</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="aid" value="Fully funded"> Fully funded scholarship</label>
+            <label><input type="checkbox" name="aid" value="Partial"> Partial scholarship</label>
+            <label><input type="checkbox" name="aid" value="Merit"> Merit scholarship</label>
+            <label><input type="checkbox" name="aid" value="Sports"> Sports scholarship</label>
+            <label><input type="checkbox" name="aid" value="Need-based"> Need-based aid</label>
+            <label><input type="checkbox" name="aid" value="Government"> Government sponsorship</label>
+            <label><input type="checkbox" name="aid" value="None required"> No aid required</label>
+            <label><input type="checkbox" name="aid" value="Welcome not essential"> Aid welcome but not essential</label>
+          </div>
+        </div>
+        <div class="field"><label>Is attendance dependent on receiving financial support? <span class="fr">/ Dépendance à une aide</span></label><input type="text" name="aid_dependency"></div>
+        <div class="field"><label>Achievements that could support a scholarship application <span class="fr">/ Réalisations soutenant une demande de bourse</span></label><textarea name="aid_achievements"></textarea></div>
+      </fieldset>
+
+      <!-- 13 PERSONAL -->
+      <fieldset class="fstep">
+        <legend>13 · Personal Profile</legend>
+        <div class="fsub">Profil personnel &amp; expériences</div>
+        <div class="field"><label>Extracurricular activities, sport, leadership, volunteering <span class="fr">/ Activités extrascolaires</span></label><textarea name="extracurricular"></textarea></div>
+        <div class="field"><label>Work experience / internships / entrepreneurship <span class="fr">/ Expérience professionnelle</span></label><textarea name="work"></textarea></div>
+        <div class="field"><label>Hobbies, interests, international exposure <span class="fr">/ Loisirs et exposition internationale</span></label><textarea name="hobbies"></textarea></div>
+        <div class="field"><label>Accomplishment you are most proud of <span class="fr">/ Fierté principale</span></label><textarea name="proud"></textarea></div>
+        <div class="field"><label>A significant challenge you have overcome <span class="fr">/ Défi surmonté</span></label><textarea name="challenge"></textarea></div>
+        <div class="field"><label>Your three greatest strengths, in your teachers' eyes <span class="fr">/ Trois forces selon vos enseignants</span></label><textarea name="strengths"></textarea></div>
+        <div class="field"><label>Initial Personal Statement (500–750 words, in your own voice): Who are you? What do you want to study and why? Why internationally? What should an admissions team understand about you beyond your grades? <span class="fr">/ Personal Statement initial, 500–750 mots</span></label><textarea name="personal_statement" style="min-height:160px"></textarea></div>
+      </fieldset>
+
+      <!-- 14 FAMILY & READINESS -->
+      <fieldset class="fstep">
+        <legend>14 · Family Expectations &amp; Readiness</legend>
+        <div class="fsub">Attentes de la famille &amp; préparation</div>
+        <div class="field"><label>Parent/Guardian — what should the student gain from international study? <span class="fr">/ Attentes des parents</span></label><textarea name="family_hopes"></textarea></div>
+        <div class="field"><label>Universities, countries or careers the family prefers <span class="fr">/ Préférences familiales</span></label><textarea name="family_pref"></textarea></div>
+        <div class="field"><label>Student — are these preferences also your own? <span class="fr">/ Accord de l'étudiant</span></label><input type="text" name="student_agrees"></div>
+        <div class="field"><label>Cultural, religious, family, safety or lifestyle considerations <span class="fr">/ Considérations à prendre en compte</span></label><textarea name="considerations"></textarea></div>
+        <div class="field"><label>Self-assessment 1–5 <span class="fr">/ Auto-évaluation de 1 à 5</span></label>
+          <div class="grid g3">
+            <div class="field"><label>Academic <span class="fr">/ Académique</span></label><select name="r_academic"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+            <div class="field"><label>English <span class="fr">/ Anglais</span></label><select name="r_english"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+            <div class="field"><label>Independence <span class="fr">/ Autonomie</span></label><select name="r_independence"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+            <div class="field"><label>Motivation <span class="fr">/ Motivation</span></label><select name="r_motivation"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+            <div class="field"><label>Financial <span class="fr">/ Financière</span></label><select name="r_financial"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+            <div class="field"><label>Visa/documents <span class="fr">/ Visa/documents</span></label><select name="r_visa"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+          </div>
+        </div>
+        <div class="field"><label>Who will monitor university emails and portals daily? <span class="fr">/ Suivi quotidien des portails</span></label><input type="text" name="monitor"></div>
+        <div class="field"><label>Voluntary — learning, accessibility or support needs to consider <span class="fr">/ Facultatif — besoins d'accompagnement</span></label><textarea name="support_needs"></textarea></div>
+      </fieldset>
+
+      <!-- 15 DOCUMENTS & DECLARATION -->
+      <fieldset class="fstep">
+        <legend>15 · Documents &amp; Declaration</legend>
+        <div class="fsub">Liste des documents &amp; déclaration</div>
+        <div class="field"><label>Documents you can provide <span class="fr">/ Documents disponibles</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="doclist" value="Passport"> Passport</label>
+            <label><input type="checkbox" name="doclist" value="Residence permit"> Residence permit</label>
+            <label><input type="checkbox" name="doclist" value="Previous visas"> Previous visas</label>
+            <label><input type="checkbox" name="doclist" value="Immigration correspondence"> Immigration correspondence</label>
+            <label><input type="checkbox" name="doclist" value="School reports 3y"> School reports — last 3 years</label>
+            <label><input type="checkbox" name="doclist" value="Transcripts"> Official transcripts</label>
+            <label><input type="checkbox" name="doclist" value="Diploma"> Final diploma/certificate</label>
+            <label><input type="checkbox" name="doclist" value="Predicted grades"> Predicted grades</label>
+            <label><input type="checkbox" name="doclist" value="English test"> English-language test</label>
+            <label><input type="checkbox" name="doclist" value="CV"> CV</label>
+            <label><input type="checkbox" name="doclist" value="Personal Statement"> Existing Personal Statement</label>
+            <label><input type="checkbox" name="doclist" value="References"> References/recommendations</label>
+            <label><input type="checkbox" name="doclist" value="Offers/rejections"> Previous offers/rejections</label>
+            <label><input type="checkbox" name="doclist" value="CAS/withdrawal"> Previous CAS/withdrawal documents</label>
+            <label><input type="checkbox" name="doclist" value="Portfolio"> Portfolio</label>
+          </div>
+        </div>
+        <div class="field"><label>If you could attend any university in the world tomorrow — where, and why? <span class="fr">/ Université de rêve absolue</span></label><textarea name="dream_abs"></textarea></div>
+        <div class="field"><label>If that option is not realistic, what matters most in your alternative? <span class="fr">/ Alternative réaliste</span></label><textarea name="alt_real"></textarea></div>
+        <div class="field"><label>Biggest concern about studying abroad? <span class="fr">/ Plus grande inquiétude</span></label><textarea name="concern"></textarea></div>
+        <div class="field"><label>What do you expect Syness Education Partner to help you accomplish? <span class="fr">/ Attentes envers Syness</span></label><textarea name="expectations"></textarea></div>
+        <div class="note">Declaration — <i>Je confirme que les informations fournies sont complètes et exactes à ma connaissance. L'admission universitaire, les bourses, le sponsorship/CAS et les visas relèvent des établissements et autorités compétents et ne peuvent être garantis par Syness Education Partner.</i><br><br>I confirm that the information provided is complete and accurate to the best of my knowledge. University admission, scholarships, sponsorship/CAS and visas remain decisions of the relevant institutions and authorities and cannot be guaranteed by Syness Education Partner.</div>
+        <div class="field"><label><input type="checkbox" name="declaration" required> I accept this declaration <span class="fr">/ J'accepte cette déclaration</span></label></div>
+        <div class="grid g2">
+          <div class="field"><label>Student name &amp; date <span class="fr">/ Nom et date de l'étudiant</span></label><input type="text" name="student_sign"></div>
+          <div class="field"><label>Parent/Guardian name &amp; date <span class="fr">/ Nom et date du parent</span></label><input type="text" name="parent_sign"></div>
+        </div>
+      </fieldset>
+
+      <div class="form-nav">
+        <button type="button" class="btn btn-line" id="prevBtn">← Previous</button>
+        <button type="button" class="btn btn-gold" id="nextBtn">Next Section →</button>
+        <button type="submit" class="btn btn-navy hidden" id="submitBtn">Submit Profile</button>
+      </div>
+    </form>
+
+    <div id="formDone" class="hidden">
+      <div class="card gold-top" style="padding:50px;text-align:center">
+        <h3 style="font-size:26px">Profile received — thank you.</h3>
+        <p style="margin-top:12px">Your confidential Student &amp; Family Profile has been submitted. The Syness education team will review it and contact you to book the diagnostic consultation — the first step toward your <b>Aspirational · Strategic · Secure</b> pathway report.<br><br><i>Votre profil a bien été transmis. L'équipe Syness vous contactera pour planifier la consultation diagnostic.</i></p>
+        <p style="margin-top:20px"><a class="btn btn-gold" href="#dashboard">See what the portal will show you</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DASHBOARD STUBS ============ -->
+<section class="band navy" id="dashboard">
+  <div class="container">
+    <div class="eyebrow tq">The Digital Client Journey — Portal Areas</div>
+    <h2 class="h2">Your Syness environment, once onboarded.</h2>
+    <p class="lede" style="margin-bottom:8px">Illustrative preview of the family dashboard modules. Live activation follows onboarding and connection to Syness's secure case-management system.</p>
+    <div class="portal-tabs">
+      <button class="ptab active" data-panel="p-profile">My Profile</button>
+      <button class="ptab" data-panel="p-pathways">My Pathways</button>
+      <button class="ptab" data-panel="p-apps">My Applications</button>
+      <button class="ptab" data-panel="p-docs">My Documents</button>
+      <button class="ptab" data-panel="p-tests">My Tests</button>
+      <button class="ptab" data-panel="p-offers">My Offers</button>
+      <button class="ptab" data-panel="p-visa">My Visa Checklist</button>
+      <button class="ptab" data-panel="p-accom">My Accommodation</button>
+      <button class="ptab" data-panel="p-appts">My Appointments</button>
+      <button class="ptab" data-panel="p-family">Family Dashboard</button>
+    </div>
+    <div class="panel active" id="p-profile">
+      <h3 style="color:var(--navy);font-family:var(--serif);margin-bottom:10px">My Profile</h3>
+      <p>Student snapshot: identity, curriculum, academic profile, languages, career vision, destinations and family decision-making — exactly as captured in the intake above, kept current with your adviser.</p>
+      <p class="panel-empty">Demo view — populated after your profile is received.</p>
+    </div>
+    <div class="panel" id="p-pathways">
+      <h3 style="color:var(--navy);font-family:var(--serif);margin-bottom:10px">My Pathways</h3>
+      <p>After the diagnostic consultation, your adviser publishes your three routes — <b>Aspirational · Strategic · Secure</b> — with recommended institutions, entry requirements, gaps to close and the rationale for each pathway.</p>
+      <p class="panel-empty">Demo view — published after your pathway report.</p>
+    </div>
+    <div class="panel" id="p-apps">
+      <h3 style="color:var(--navy);font-family:var(--serif);margin-bottom:10px">My Applications</h3>
+      <p>Submission order, deadlines, internal Syness target dates and live status for UCAS and direct applications — coordinated so nothing is missed.</p>
+      <p class="panel-empty">Demo view — activated when applications begin.</p>
+    </div>
+    <div class="panel" id="p-docs">
+      <h3 style="color:var(--navy);font-family:var(--serif);margin-bottom:10px">My Documents</h3>
+      <p>Secure upload for transcripts, school reports, references, translations and identity documents, with a checklist of what is missing.</p>
+      <p class="panel-empty">Demo view — secure vault connected at onboarding.</p>
+    </div>
+    <div class="panel" id="p-tests">
+      <h3 style="color:var(--navy);font-family:var(--serif);margin-bottom:10px">My Tests</h3>
+      <p>English and admissions-test planning: diagnostic level, target score, preparation timetable, approved test route and retake strategy.</p>
+      <p class="panel-empty">Demo view — planned during the diagnostic.</p>
+    </div>
+    <div class="panel" id="p-offers">
+      <h3 style="color:var(--navy);font-family:var(--serif);margin-bottom:10px">My Offers</h3>
+      <p>Offers received, compared strategically against your pathways, budget and long-term goals — with decision support before deadlines.</p>
+      <p class="panel-empty">Demo view — appears with your first offers.</p>
+    </div>
+    <div class="panel" id="p-visa">
+      <h3 style="color:var(--navy);font-family:var(--serif);margin-bottom:10px">My Visa Checklist</h3>
+      <p>Document coordination for the visa process — factual checklists and deadlines, prepared with your adviser. Immigration decisions remain with the relevant authorities.</p>
+      <p class="panel-empty">Demo view — opened at offer stage.</p>
+    </div>
+    <div class="panel" id="p-accom">
+      <h3 style="color:var(--navy);font-family:var(--serif);margin-bottom:10px">My Accommodation</h3>
+      <p>Accommodation strategy and transition planning for your destination — options, deadlines and arrival logistics.</p>
+      <p class="panel-empty">Demo view — planned pre-departure.</p>
+    </div>
+    <div class="panel" id="p-appts">
+      <h3 style="color:var(--navy);font-family:var(--serif);margin-bottom:10px">My Appointments</h3>
+      <p>Diagnostic consultation, strategy sessions, pre-departure briefing and check-ins — booked and tracked here.</p>
+      <p class="panel-empty">Demo view — scheduling opens after submission.</p>
+    </div>
+    <div class="panel" id="p-family">
+      <h3 style="color:var(--navy);font-family:var(--serif);margin-bottom:10px">Family Dashboard</h3>
+      <p>One view for parents and guardians: progress, payment milestones, upcoming decisions, communication with the Syness team and urgent contacts.</p>
+      <p class="panel-empty">Demo view — activated for the family decision-makers named in your profile.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS BAND -->
+<section class="band tint">
+  <div class="container">
+    <div class="eyebrow">The Digital Client Journey</div>
+    <h2 class="h2">How your family moves through Syness.</h2>
+    <div class="howit">
+      <div class="h"><div class="n">01</div><b>Discover</b><span>Explore the service and destinations.</span></div>
+      <div class="h"><div class="n">02</div><b>Profile</b><span>Complete the multilingual Student &amp; Family Profile.</span></div>
+      <div class="h"><div class="n">03</div><b>Diagnose</b><span>Syness reviews academics, ambitions, finance and mobility.</span></div>
+      <div class="h"><div class="n">04</div><b>Strategy</b><span>Receive Aspirational, Strategic and Secure pathways.</span></div>
+      <div class="h"><div class="n">05</div><b>Engage</b><span>Select the service scope and begin.</span></div>
+      <div class="h"><div class="n">06</div><b>Apply</b><span>Applications, tests, documents, deadlines coordinated.</span></div>
+      <div class="h"><div class="n">07</div><b>Decide</b><span>Offers compared strategically.</span></div>
+      <div class="h"><div class="n">08</div><b>Transition</b><span>Visa documents, accommodation, arrival.</span></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site"><div class="container">
+  <div class="f-grid">
+    <div>
+      <h4>Syness Education Partner</h4>
+      <p>Global Business &amp; University Pathways. Private education · global access · conscious leadership.</p>
+    </div>
+    <div>
+      <h4>Portal</h4>
+      <p><a href="#new">Start Your Profile</a><br><a href="#dashboard">Family Dashboard</a><br><a href="university-pathways.html">Global University Pathways</a></p>
+    </div>
+    <div>
+      <h4>Syness</h4>
+      <p><a href="index.html">Syness Invest</a><br><a href="contact.html">Contact</a><br><a href="contact.html">Investor Access</a></p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>contact@synessinvest.com<br>synessinvest.com<br>UK +44 7882 333 964<br>France +33 6 48 33 40 43</p>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <div>© <span id="yr">2026</span> Syness Invest Ltd · Syness Education Partner</div>
+    <div>CONFIDENTIAL — FOR ENROLLED FAMILIES &amp; AUTHORISED PARTNERS</div>
+  </div>
+  <p class="disclaimer">Syness provides education strategy, application coordination and documentary support. Admission, scholarships, immigration sponsorship/CAS and visas remain decisions of the relevant institutions and authorities. The portal modules shown are an illustrative preview of the digital client journey; live access is activated during onboarding.</p>
+</div></footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
