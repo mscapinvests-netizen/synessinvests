@@ -52,7 +52,13 @@
     <p class="lede">Multilingual intake · English / Français. Everything you share is treated as confidential and used only to design the student's pathway strategy.</p>
     <div class="note"><b>When should you start?</b> Ideally, university planning begins during <b>Première / Year 12 (or the equivalent)</b>, allowing time to strengthen grades, choose subjects strategically, prepare language tests, build extracurricular evidence, research destinations and prepare applications. However, Syness can assess students at <b>any stage</b> — early planning, late applications, transfers, mature-student entry, postgraduate study or urgent pathway review. Earlier preparation creates more options.</div>
 
-    <form id="intakeForm" novalidate>
+    <form id="intakeForm" novalidate
+      data-form-email="josephsteve.ntepp@gmail.com"
+      data-subject="New Student &amp; Family Profile">
+      <input type="hidden" name="_cc" value="contact@synessinvest.com,massamba.sy@syness.sn">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <div class="steps-progress">
         <span class="step-count" id="stepLabel">Section 1 / 15</span>
         <div class="bar"><div class="fill" id="barFill"></div></div>
@@ -403,6 +409,7 @@
         <div class="field"><label>What do you expect Syness Education Partner to help you accomplish? <span class="fr">/ Attentes envers Syness</span></label><textarea name="expectations"></textarea></div>
         <div class="note">Declaration — <i>Je confirme que les informations fournies sont complètes et exactes à ma connaissance. L'admission universitaire, les bourses, le sponsorship/CAS et les visas relèvent des établissements et autorités compétents et ne peuvent être garantis par Syness Education Partner.</i><br><br>I confirm that the information provided is complete and accurate to the best of my knowledge. University admission, scholarships, sponsorship/CAS and visas remain decisions of the relevant institutions and authorities and cannot be guaranteed by Syness Education Partner.</div>
         <div class="field"><label><input type="checkbox" name="declaration" required> I accept this declaration <span class="fr">/ J'accepte cette déclaration</span></label></div>
+        <div class="field"><label><input type="checkbox" name="consent" value="Yes" required> I consent to Syness processing the personal data in this form (including data about the student, who may be a minor) solely to assess and design the student's pathway. <span class="fr">/ J'accepte que Syness traite les données personnelles de ce formulaire (y compris celles de l'étudiant, éventuellement mineur) uniquement pour évaluer et construire son parcours.</span></label></div>
         <div class="grid g2">
           <div class="field"><label>Student name &amp; date <span class="fr">/ Nom et date de l'étudiant</span></label><input type="text" name="student_sign"></div>
           <div class="field"><label>Parent/Guardian name &amp; date <span class="fr">/ Nom et date du parent</span></label><input type="text" name="parent_sign"></div>
@@ -414,6 +421,7 @@
         <button type="button" class="btn btn-gold" id="nextBtn">Next Section →</button>
         <button type="submit" class="btn btn-navy hidden" id="submitBtn">Submit Profile</button>
       </div>
+      <p id="formError" class="note hidden" style="margin-top:18px;border-left-color:#B3261E"></p>
     </form>
 
     <div id="formDone" class="hidden">

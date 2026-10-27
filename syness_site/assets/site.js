@@ -1,5 +1,5 @@
 /* ============================================================
-   SYNNESS INVEST — site behaviour (demo front-end, no backend)
+   SYNESS INVEST — site behaviour
    ============================================================ */
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -32,13 +32,61 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (prevBtn) prevBtn.addEventListener('click', function () { if (idx > 0) { idx--; render(); } });
     if (nextBtn) nextBtn.addEventListener('click', function () { if (idx < steps.length - 1) { idx++; render(); } });
+    var errBox = document.getElementById('formError');
+    function showError(msg) {
+      if (!errBox) { alert(msg); return; }
+      errBox.textContent = msg;
+      errBox.classList.remove('hidden');
+    }
+
+    /* Real submission via FormSubmit (same service as the v1 contact forms). */
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      /* DEMO: no backend attached yet. Connect to Syness CRM / secure mailbox before launch. */
-      form.classList.add('hidden');
-      var done = document.getElementById('formDone');
-      if (done) done.classList.remove('hidden');
-      window.scrollTo({ top: document.getElementById('new').offsetTop - 90, behavior: 'smooth' });
+      if (errBox) errBox.classList.add('hidden');
+
+      /* The form is "novalidate" (multi-step), so check the mandatory boxes here. */
+      var decl = form.querySelector('input[name="declaration"]');
+      var consent = form.querySelector('input[name="consent"]');
+      if ((decl && !decl.checked) || (consent && !consent.checked)) {
+        showError('Please accept the declaration and the data-processing consent before submitting. / Merci d\'accepter la déclaration et le consentement avant d\'envoyer.');
+        return;
+      }
+
+      var email = form.getAttribute('data-form-email');
+      var raw = new FormData(form);
+      var fd = new FormData();
+      /* Merge multi-choice checkboxes (same name) into one line so no answer is lost. */
+      raw.forEach(function (value, key) {
+        if (typeof value !== 'string') return;
+        if (fd.has(key)) fd.set(key, fd.get(key) + ', ' + value);
+        else fd.append(key, value);
+      });
+      var name = (raw.get('legal_name') || '').toString().trim();
+      fd.set('_subject', (form.getAttribute('data-subject') || 'New Student Profile') + (name ? ' — ' + name : ''));
+
+      var btn = document.getElementById('submitBtn');
+      var btnText = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending… / Envoi…'; }
+
+      fetch('https://formsubmit.co/ajax/' + email, {
+        method: 'POST',
+        body: fd,
+        headers: { Accept: 'application/json' }
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (!(data && data.success && data.success !== 'false')) {
+            throw new Error((data && data.message) || 'Submission failed');
+          }
+          form.classList.add('hidden');
+          var done = document.getElementById('formDone');
+          if (done) done.classList.remove('hidden');
+          window.scrollTo({ top: document.getElementById('new').offsetTop - 90, behavior: 'smooth' });
+        })
+        .catch(function () {
+          showError('Sorry, your profile could not be sent. Please try again, or write to contact@synessinvest.com. / Désolé, l\'envoi a échoué. Réessayez ou écrivez à contact@synessinvest.com.');
+          if (btn) { btn.disabled = false; btn.textContent = btnText; }
+        });
     });
 
     render(false);
