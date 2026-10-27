@@ -72,6 +72,20 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://synessinvest.com/#/university-pathways</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synessinvest.com/#/university-pathways"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synessinvest.com/#/university-pathways?lang=fr"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://synessinvest.com/#/portal</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synessinvest.com/#/portal"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synessinvest.com/#/portal?lang=fr"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://synessinvest.com/#/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
